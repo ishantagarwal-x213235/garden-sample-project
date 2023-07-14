@@ -1,0 +1,5 @@
+config:
+  'pulumi-k8s:appName': spring-boot
+  'kubernetes:context': docker-desktop
+  'pulumi-k8s:orgName': telushealth
+  'pulumi-k8s:namespace': thx

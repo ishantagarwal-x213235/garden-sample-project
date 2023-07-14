@@ -1,0 +1,7 @@
+# springProfiles is defined on project.garden.yml
+${var.pulumiProjectName}:springProfiles: ${var.springProfiles}
+
+${var.pulumiProjectName}:appName: spring-boot
+
+${var.pulumiProjectName}:namespace: ${var.namespace}
+${var.pulumiProjectName}:dockerRepoUrl: ${var.dockerRepo}

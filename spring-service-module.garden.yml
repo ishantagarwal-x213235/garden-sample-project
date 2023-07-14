@@ -1,0 +1,61 @@
+kind: ModuleTemplate
+name: spring-service-module-template
+inputsSchemaPath: schema.json
+
+modules:
+  - type: jib-container
+    name: ${parent.name}-publish-image
+    description: Backend service
+
+    include: 
+      - ./**/src/**/*
+      - pom.xml
+      - ./**/pom.xml
+    image: ${parent.name}
+    extraFlags: 
+    - -Djib.useOnlyProjectCache=false
+    - "-Djib.from.image=${var.dockerRepo}/${inputs.jdkVersion == '11' ? var.baseImageJava11 : var.baseImageJava8}"
+    - "-nsu"
+    - "-Dtransitive=false"
+
+    build: 
+      jdkVersion: ${inputs.jdkVersion} 
+      projectType: maven
+      dependencies: ${var.dependencies}?
+      mavenPhases: [ "clean", "package" ]
+
+
+  - type: pulumi
+    name: ${parent.name}-service # ${var.test}-${parent.name} #${parent.name}-module
+    description: common to all REST services
+    root: ${inputs.deploymentFolder}/pulumi
+    stack: "${environment.name}"
+
+    variables:
+      excludeDefault: ["${parent.name}"]
+      pulumiProjectName: ${var.gardenProjectName}-${var.projectname}-${parent.name}
+
+    createStack: true
+    autoApply: true
+
+    deployFromPreview: ${var.withPlan}
+
+    pulumiVarfiles: 
+       - "${local.projectPath}/pulumi/config/global.yaml"
+       - "${inputs.deploymentFolder}/config/common.yaml"
+       - "${inputs.deploymentFolder}/config/${environment.name}.yaml"
+
+          
+    exclude: ${inputs.excludeModules || var.excludeDefault}
+    include: 
+      - "./*/config/application-gcp.properties"
+      - "./*/config/application-gcp-${environment.name}.properties"
+      - "./*/config/*.xml"
+      - "./*/secrets/${environment.name}/**"
+      - "./${inputs.deploymentFolder}/config/common.yaml"
+      - "${inputs.deploymentFolder}/config/${environment.name}.yaml"
+
+      
+    build:
+      dependencies: ["${'${parent.name}-publish-image'}"]
+

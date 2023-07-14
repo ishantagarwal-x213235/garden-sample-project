@@ -1,0 +1,1 @@
+${var.pulumiProjectName}:replicas: 1

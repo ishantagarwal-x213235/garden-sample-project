@@ -1,0 +1,58 @@
+{
+    "type": "object",
+    "properties": {
+      "excludeModules": {
+        "type": "array",
+        "items": {
+            "type": "string"
+        }
+      },
+      "deploymentFolder": {
+        "type": "string",
+        "default": "deployment"
+      },
+      "deploymentScriptPath": {
+        "type": "string",
+        "default": "../../../../deployment-common/scripts"
+      },
+      "dockerBuildArgs":{
+        "type": "object",
+        "default": {"containerUserGroup":"nobody", "containerUser":"nobody"}
+      },
+      "source":{
+        "type" : "string",
+        "default": "target/"
+      },
+      "target":{
+        "type" : "string",
+        "default": "target/"
+      },
+      "mavenize":{
+        "type": "boolean",
+        "default": true
+      },
+      "customEntryPoint": {
+        "type": "boolean",
+        "default": false
+      },
+      "includeFiles": {
+        "type": "array",
+        "items": {
+            "type": "string"
+        },
+        "default": [
+          "./**/src/**/*",
+          "pom.xml",
+          "./**/pom.xml"
+        ]
+      },
+      "artifactGroupId": {
+        "type": "string",
+        "default": "com.telushealth.exchange.cs"
+      },
+      "jdkVersion": {
+        "type": "string",
+        "default": "8"
+      }
+    }
+}

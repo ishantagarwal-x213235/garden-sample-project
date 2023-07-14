@@ -1,0 +1,9 @@
+${var.pulumiProjectName}:app-name: ${parent.name}
+
+# Optional param. Use it for testing. The deployment will add the '-suffix' to app-name param. 
+# So, it will deploy, for example,activemq-test service and it will not collide with 'official' activemq deployment 
+${var.pulumiProjectName}:app-name-suffix:
+
+# for most services the same as app-name. For 'two-face' services, like CRM anf TPR, docker image name which will be different from app-name.
+# For example, app-name is 'tpr-cache-updater-prescribeit' and image-name 'tpr-cache-updater'
+${var.pulumiProjectName}:image-name: ${parent.name}

@@ -1,0 +1,4 @@
+name: pulumi-k8s
+runtime: nodejs
+description: A minimal Kubernetes TypeScript Pulumi program
+main: "default-index.ts"
