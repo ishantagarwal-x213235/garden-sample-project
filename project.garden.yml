@@ -4,15 +4,15 @@ name: thx-sample-project
 variables:
   skipBuild: false # skip build dependency in the templates
   gardenProjectName: thx
-  dockerRepo: us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo
+  dockerRepo: dockerRepoURL
   baseImageJava8: eclipse-temurin:8u345-b01-jre-ubuntu23
   baseImageJava11: distroless-os-images:debian11-java11.0.18
   namespace: thx
   projectname: sharedServices
   withPlan: false # requires plan to deploy services
   deploymentRegistry:
-      hostname: us-docker.pkg.dev
-      namespace: th-thx-common-46f5/thx-prod-docker-repo
+      hostname: docker-registry-hostname
+      namespace: namespace
 
 environments:
   - name: dev
@@ -25,7 +25,7 @@ providers:
     environments: ["dev"]
   - name: kubernetes
     environments: ["dev"]
-    context: gke_th-thx-dev-10c7_northamerica-northeast1_thx-dev-gke
+    context: k8s_context
     deploymentRegistry: ${var.deploymentRegistry}
     buildMode: kaniko
     kaniko:
@@ -43,4 +43,4 @@ providers:
     environments: ["dev"]
     # The version of pulumi to use. Set to `null` to use whichever version of `pulumi` is on your PATH.
     version: 3.64.0
-    orgName: telushealth
+    orgName: org_name
