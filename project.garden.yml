@@ -4,7 +4,7 @@ name: thx-sample-project
 variables:
   skipBuild: false # skip build dependency in the templates
   gardenProjectName: thx
-  dockerRepo: dockerRepoURL
+  dockerRepo: dockerRepoURLs
   baseImageJava8: eclipse-temurin:8u345-b01-jre-ubuntu23
   baseImageJava11: distroless-os-images:debian11-java11.0.18
   namespace: thx
