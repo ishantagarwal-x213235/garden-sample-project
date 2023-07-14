@@ -1,6 +1,0 @@
-kind: Module
-type: templated
-template: spring-service-module-template
-name: spring-boot-k8s
-inputs:
-  jdkVersion: "8" #by defualt available in schema.json but ModuleTemplate failed to find it.
