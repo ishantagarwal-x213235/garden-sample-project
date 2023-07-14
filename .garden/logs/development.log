@@ -1,0 +1,1577 @@
+
+[2023-07-14T12:00:13.239Z] Getting status...
+
+[2023-07-14T12:00:14.085Z] resolve provider exec is ready.
+
+[2023-07-14T12:00:14.090Z] resolve provider container is ready.
+
+[2023-07-14T12:00:14.097Z] resolve provider pulumi is ready.
+
+[2023-07-14T12:00:14.100Z] resolve provider templated is ready.
+
+[2023-07-14T12:00:14.106Z] resolve provider jib is ready.
+
+[2023-07-14T12:00:15.986Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-07-14T12:00:16.877Z] resolve provider kubernetes is ready.
+
+[2023-07-14T12:00:16.881Z] Done (took 3.6 sec)
+
+[2023-07-14T12:00:16.881Z] Resolving actions and modules...
+
+[2023-07-14T12:00:17.016Z] Scanning module spring-boot-publish-image root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./**/pom.xml,./**/src/**/*,pom.xml
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:00:17.114Z] Found 3 files in module spring-boot-publish-image root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:00:17.193Z] Scanning module spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./*/config/*.xml,./*/config/application-gcp-dev.properties,./*/config/application-gcp.properties,./*/secrets/dev/**,./deployment/config/common.yaml,deployment/config/dev.yaml
+  → Excludes: spring-boot,**/.garden/**/*
+
+[2023-07-14T12:00:17.268Z] Found 2 files in module spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:00:17.273Z] Converting jib-container module spring-boot-publish-image to actions
+
+[2023-07-14T12:00:17.273Z] Converting pulumi module spring-boot-service to actions
+
+[2023-07-14T12:00:17.276Z] Module spring-boot-service converted to 1 action(s)
+
+[2023-07-14T12:00:17.277Z] Module spring-boot-publish-image converted to 1 action(s)
+
+[2023-07-14T12:00:17.307Z] Scanning Deploy action spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: (none)
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:00:17.883Z] Found 18 files in Deploy action spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:00:17.887Z] Done (took 1 sec)
+
+[2023-07-14T12:00:19.190Z] resolve Deploy type=pulumi name=spring-boot-service (from module spring-boot-service) is ready.
+
+[2023-07-14T12:00:19.195Z] outdated
+
+[2023-07-14T12:00:19.198Z] Deploying version v-77c10a399a...
+
+[2023-07-14T12:00:19.244Z] Failed (took 0 sec)
+
+[2023-07-14T12:00:19.271Z] Done flushing all events and log entries.
+
+[2023-07-14T12:00:19.323Z] Watcher: Initializing
+
+[2023-07-14T12:00:19.324Z] Watcher: Starting FSWatcher
+
+[2023-07-14T12:00:20.276Z] 
+
+1 deploy action(s) failed!
+
+[2023-07-14T12:00:20.278Z] 
+See .garden/error.log for detailed error message
+
+[2023-07-14T12:08:28.804Z] Getting status...
+
+[2023-07-14T12:08:29.565Z] resolve provider templated is ready.
+
+[2023-07-14T12:08:29.572Z] resolve provider exec is ready.
+
+[2023-07-14T12:08:29.576Z] resolve provider container is ready.
+
+[2023-07-14T12:08:29.582Z] resolve provider pulumi is ready.
+
+[2023-07-14T12:08:29.593Z] resolve provider jib is ready.
+
+[2023-07-14T12:08:29.603Z] resolve provider kubernetes is ready.
+
+[2023-07-14T12:08:29.607Z] Cached (took 0.8 sec)
+
+[2023-07-14T12:08:29.607Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-07-14T12:08:29.607Z] Resolving actions and modules...
+
+[2023-07-14T12:08:29.758Z] Scanning module spring-boot-publish-image root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./**/pom.xml,./**/src/**/*,pom.xml
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:08:29.848Z] Found 3 files in module spring-boot-publish-image root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:08:29.925Z] Scanning module spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./*/config/*.xml,./*/config/application-gcp-dev.properties,./*/config/application-gcp.properties,./*/secrets/dev/**,./deployment/config/common.yaml,deployment/config/dev.yaml
+  → Excludes: spring-boot,**/.garden/**/*
+
+[2023-07-14T12:08:29.992Z] Found 2 files in module spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:08:29.996Z] Converting jib-container module spring-boot-publish-image to actions
+
+[2023-07-14T12:08:29.996Z] Converting pulumi module spring-boot-service to actions
+
+[2023-07-14T12:08:29.999Z] Module spring-boot-service converted to 1 action(s)
+
+[2023-07-14T12:08:30.000Z] Module spring-boot-publish-image converted to 1 action(s)
+
+[2023-07-14T12:08:30.031Z] Scanning Deploy action spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: (none)
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:08:30.655Z] Found 17 files in Deploy action spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:08:31.400Z] Done (took 1.8 sec)
+
+[2023-07-14T12:08:31.712Z] resolve Deploy type=pulumi name=spring-boot-service (from module spring-boot-service) is ready.
+
+[2023-07-14T12:08:31.716Z] outdated
+
+[2023-07-14T12:08:31.718Z] Deploying version v-7934ab101c...
+
+[2023-07-14T12:08:31.755Z] Failed (took 0 sec)
+
+[2023-07-14T12:08:31.786Z] Done flushing all events and log entries.
+
+[2023-07-14T12:08:31.837Z] Watcher: Initializing
+
+[2023-07-14T12:08:31.837Z] Watcher: Starting FSWatcher
+
+[2023-07-14T12:08:32.765Z] 
+
+1 deploy action(s) failed!
+
+[2023-07-14T12:08:32.767Z] 
+See .garden/error.log for detailed error message
+
+[2023-07-14T12:09:14.698Z] Getting status...
+
+[2023-07-14T12:09:15.558Z] resolve provider exec is ready.
+
+[2023-07-14T12:09:15.563Z] resolve provider container is ready.
+
+[2023-07-14T12:09:15.571Z] resolve provider templated is ready.
+
+[2023-07-14T12:09:15.575Z] resolve provider pulumi is ready.
+
+[2023-07-14T12:09:15.587Z] resolve provider jib is ready.
+
+[2023-07-14T12:09:15.597Z] resolve provider kubernetes is ready.
+
+[2023-07-14T12:09:15.601Z] Cached (took 0.9 sec)
+
+[2023-07-14T12:09:15.602Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-07-14T12:09:15.602Z] Resolving actions and modules...
+
+[2023-07-14T12:09:15.775Z] Scanning module spring-boot-publish-image root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./**/pom.xml,./**/src/**/*,pom.xml
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:09:15.876Z] Found 3 files in module spring-boot-publish-image root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:09:15.976Z] Scanning module spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./*/config/*.xml,./*/config/application-gcp-dev.properties,./*/config/application-gcp.properties,./*/secrets/dev/**,./deployment/config/common.yaml,deployment/config/dev.yaml
+  → Excludes: spring-boot,**/.garden/**/*
+
+[2023-07-14T12:09:16.050Z] Found 2 files in module spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:09:16.055Z] Converting jib-container module spring-boot-publish-image to actions
+
+[2023-07-14T12:09:16.055Z] Converting pulumi module spring-boot-service to actions
+
+[2023-07-14T12:09:16.059Z] Module spring-boot-service converted to 1 action(s)
+
+[2023-07-14T12:09:16.059Z] Module spring-boot-publish-image converted to 1 action(s)
+
+[2023-07-14T12:09:16.093Z] Scanning Deploy action spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: (none)
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:09:17.111Z] Found 17 files in Deploy action spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:09:17.910Z] Done (took 2.3 sec)
+
+[2023-07-14T12:09:18.169Z] resolve Deploy type=pulumi name=spring-boot-service (from module spring-boot-service) is ready.
+
+[2023-07-14T12:09:18.173Z] outdated
+
+[2023-07-14T12:09:18.176Z] Deploying version v-7934ab101c...
+
+[2023-07-14T12:09:18.223Z] Failed (took 0 sec)
+
+[2023-07-14T12:09:18.256Z] Done flushing all events and log entries.
+
+[2023-07-14T12:09:18.307Z] Watcher: Initializing
+
+[2023-07-14T12:09:18.308Z] Watcher: Starting FSWatcher
+
+[2023-07-14T12:09:19.242Z] 
+
+1 deploy action(s) failed!
+
+[2023-07-14T12:09:19.245Z] 
+See .garden/error.log for detailed error message
+
+[2023-07-14T12:10:34.324Z] Getting status...
+
+[2023-07-14T12:10:35.132Z] resolve provider templated is ready.
+
+[2023-07-14T12:10:35.137Z] resolve provider exec is ready.
+
+[2023-07-14T12:10:35.144Z] resolve provider container is ready.
+
+[2023-07-14T12:10:35.152Z] resolve provider pulumi is ready.
+
+[2023-07-14T12:10:35.171Z] resolve provider jib is ready.
+
+[2023-07-14T12:10:35.184Z] resolve provider kubernetes is ready.
+
+[2023-07-14T12:10:35.188Z] Cached (took 0.9 sec)
+
+[2023-07-14T12:10:35.189Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-07-14T12:10:35.189Z] Resolving actions and modules...
+
+[2023-07-14T12:10:35.375Z] Scanning module spring-boot-publish-image root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./**/pom.xml,./**/src/**/*,pom.xml
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:10:35.476Z] Found 3 files in module spring-boot-publish-image root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:10:35.583Z] Scanning module spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./*/config/*.xml,./*/config/application-gcp-dev.properties,./*/config/application-gcp.properties,./*/secrets/dev/**,./deployment/config/common.yaml,deployment/config/dev.yaml
+  → Excludes: spring-boot,**/.garden/**/*
+
+[2023-07-14T12:10:35.655Z] Found 2 files in module spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:10:35.664Z] Converting jib-container module spring-boot-publish-image to actions
+
+[2023-07-14T12:10:35.664Z] Converting pulumi module spring-boot-service to actions
+
+[2023-07-14T12:10:35.667Z] Module spring-boot-service converted to 1 action(s)
+
+[2023-07-14T12:10:35.668Z] Module spring-boot-publish-image converted to 1 action(s)
+
+[2023-07-14T12:10:35.701Z] Scanning Deploy action spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: (none)
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:10:36.768Z] Found 17 files in Deploy action spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:10:37.568Z] Done (took 2.4 sec)
+
+[2023-07-14T12:10:37.830Z] resolve Deploy type=pulumi name=spring-boot-service (from module spring-boot-service) is ready.
+
+[2023-07-14T12:10:37.835Z] outdated
+
+[2023-07-14T12:10:37.838Z] Deploying version v-7934ab101c...
+
+[2023-07-14T12:10:37.858Z] merging config for action spring-boot-service
+
+[2023-07-14T12:10:37.858Z] pulumiVariables from action: {}
+
+[2023-07-14T12:10:37.859Z] varfileContents: [
+  {
+    "thx-sharedServices-spring-boot:app-name": "spring-boot",
+    "thx-sharedServices-spring-boot:image-name": "spring-boot",
+    "thx-sharedServices-spring-boot:app-version": "v-e5b98fbac9"
+  },
+  {
+    "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+    "thx-sharedServices-spring-boot:appName": "spring-boot",
+    "thx-sharedServices-spring-boot:namespace": "thx",
+    "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/"
+  },
+  {
+    "thx-sharedServices-spring-boot:replicas": 1
+  }
+]
+
+[2023-07-14T12:10:37.859Z] merged vars: {
+  "thx-sharedServices-spring-boot:app-name": "spring-boot",
+  "thx-sharedServices-spring-boot:image-name": "spring-boot",
+  "thx-sharedServices-spring-boot:app-version": "v-e5b98fbac9",
+  "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+  "thx-sharedServices-spring-boot:appName": "spring-boot",
+  "thx-sharedServices-spring-boot:namespace": "thx",
+  "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/",
+  "thx-sharedServices-spring-boot:replicas": 1
+}
+
+[2023-07-14T12:10:37.860Z] merged config (written to /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi/Pulumi.dev.yaml): {
+  "config": {
+    "thx-sharedServices-spring-boot:app-name": "spring-boot",
+    "thx-sharedServices-spring-boot:image-name": "spring-boot",
+    "thx-sharedServices-spring-boot:app-version": "v-e5b98fbac9",
+    "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+    "thx-sharedServices-spring-boot:appName": "spring-boot",
+    "thx-sharedServices-spring-boot:namespace": "thx",
+    "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/",
+    "thx-sharedServices-spring-boot:replicas": 1
+  },
+  "backend": {
+    "url": "https://api.pulumi.com"
+  }
+}
+
+[2023-07-14T12:10:37.868Z] Spawning '/home/workstation/.garden/tools/pulumi-3-64-0/0a94b984fa69df6c/pulumi/pulumi stack select telushealth/dev --create' in /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi
+
+[2023-07-14T12:10:39.437Z] Applying pulumi stack...
+
+[2023-07-14T12:10:39.438Z] Spawning '/home/workstation/.garden/tools/pulumi-3-64-0/0a94b984fa69df6c/pulumi/pulumi up --yes --color always --config-file /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi/Pulumi.dev.yaml' in /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi
+
+[2023-07-14T12:10:40.782Z] [pulumi-3-64-0] Previewing update (telushealth/dev)
+
+[2023-07-14T12:10:42.189Z] [pulumi-3-64-0] View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/previews/3a7b5951-54f4-40c2-92b4-0804d00a54aa
+
+[2023-07-14T12:10:43.090Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create 
+
+[2023-07-14T12:10:45.760Z] [pulumi-3-64-0] @ Previewing update......
+
+[2023-07-14T12:10:45.761Z] [pulumi-3-64-0]  +  thx:service:ThxrestService spring-boot create 
+
+[2023-07-14T12:10:45.761Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:10:47.404Z] [pulumi-3-64-0] @ Previewing update.....
+
+[2023-07-14T12:10:47.404Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:10:47.468Z] [pulumi-3-64-0]  +  pulumi:providers:kubernetes k8s create 
+
+[2023-07-14T12:10:50.742Z] [pulumi-3-64-0] @ Previewing update......
+
+[2023-07-14T12:10:50.743Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot create 
+
+[2023-07-14T12:10:50.859Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create 
+
+[2023-07-14T12:10:50.860Z] [pulumi-3-64-0] Resources:
+
+[2023-07-14T12:10:50.860Z] [pulumi-3-64-0]     + 4 to create
+
+[2023-07-14T12:10:51.656Z] [pulumi-3-64-0] Updating (telushealth/dev)
+
+[2023-07-14T12:10:53.234Z] [pulumi-3-64-0] View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/updates/3
+
+[2023-07-14T12:10:54.106Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (0s) 
+
+[2023-07-14T12:10:55.577Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:10:55.577Z] [pulumi-3-64-0]  +  thx:service:ThxrestService spring-boot creating (0s) 
+
+[2023-07-14T12:10:56.723Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:10:56.724Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (2s) read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:10:59.180Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:10:59.181Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (5s) read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:11:00.261Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:11:00.262Z] [pulumi-3-64-0]  +  pulumi:providers:kubernetes k8s creating (0s) 
+
+[2023-07-14T12:11:01.019Z] [pulumi-3-64-0]  +  pulumi:providers:kubernetes k8s created (0.76s) 
+
+[2023-07-14T12:11:03.712Z] [pulumi-3-64-0] @ Updating......
+
+[2023-07-14T12:11:03.712Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (0s) 
+
+[2023-07-14T12:11:05.972Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:11:05.972Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (2s) 
+
+[2023-07-14T12:11:05.973Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (2s) [1/2] Waiting for app ReplicaSet be marked available
+
+[2023-07-14T12:11:07.937Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:11:07.937Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (4s) warning: [MinimumReplicasUnavailable] Deployment does not have minimum availability.
+
+[2023-07-14T12:11:08.126Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (4s) [1/2] Waiting for app ReplicaSet be marked available (0/1 Pods available)
+
+[2023-07-14T12:11:15.978Z] [pulumi-3-64-0] @ Updating...........
+
+[2023-07-14T12:11:15.979Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (12s) warning: [Pod thx/spring-boot-6d976b86b4-ss2hm]: containers with incomplete status: [install-oneagent]
+
+[2023-07-14T12:11:55.975Z] [pulumi-3-64-0] @ Updating...........................................
+
+[2023-07-14T12:11:55.976Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (52s) warning: [Pod thx/spring-boot-6d976b86b4-ss2hm]: containers with unready status: [spring-boot] -- [PodInitializing] 
+
+[2023-07-14T12:12:15.974Z] [pulumi-3-64-0] @ Updating.......................
+
+[2023-07-14T12:12:15.975Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (72s) warning: [Pod thx/spring-boot-6d976b86b4-ss2hm]: containers with unready status: [spring-boot] -- [ErrImagePull] rpc error: code = NotFound desc = failed to pull and unpack image "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot:v-e5b98fbac9": failed to resolve reference "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot:v-e5b98fbac9": us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot:v-e5b98fbac9: not found
+
+[2023-07-14T12:12:45.973Z] [pulumi-3-64-0] @ Updating.................................
+
+[2023-07-14T12:12:45.974Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (102s) warning: [Pod thx/spring-boot-6d976b86b4-ss2hm]: containers with unready status: [spring-boot] -- [ImagePullBackOff] Back-off pulling image "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot:v-e5b98fbac9"
+
+[2023-07-14T12:15:19.021Z] Getting status...
+
+[2023-07-14T12:15:19.792Z] resolve provider templated is ready.
+
+[2023-07-14T12:15:19.797Z] resolve provider exec is ready.
+
+[2023-07-14T12:15:19.801Z] resolve provider container is ready.
+
+[2023-07-14T12:15:19.807Z] resolve provider pulumi is ready.
+
+[2023-07-14T12:15:19.810Z] resolve provider jib is ready.
+
+[2023-07-14T12:15:19.821Z] resolve provider kubernetes is ready.
+
+[2023-07-14T12:15:19.825Z] Cached (took 0.8 sec)
+
+[2023-07-14T12:15:19.825Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-07-14T12:15:19.825Z] Resolving actions and modules...
+
+[2023-07-14T12:15:20.000Z] Scanning module spring-boot-image root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./**/pom.xml,./**/src/**/*,pom.xml
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:15:20.095Z] Found 3 files in module spring-boot-image root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:15:20.188Z] Scanning module spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./*/config/*.xml,./*/config/application-gcp-dev.properties,./*/config/application-gcp.properties,./*/secrets/dev/**,./deployment/config/common.yaml,deployment/config/dev.yaml
+  → Excludes: spring-boot,**/.garden/**/*
+
+[2023-07-14T12:15:20.260Z] Found 2 files in module spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:15:20.264Z] Converting jib-container module spring-boot-image to actions
+
+[2023-07-14T12:15:20.264Z] Converting pulumi module spring-boot-service to actions
+
+[2023-07-14T12:15:20.267Z] Module spring-boot-service converted to 1 action(s)
+
+[2023-07-14T12:15:20.268Z] Module spring-boot-image converted to 1 action(s)
+
+[2023-07-14T12:15:20.291Z] Scanning Deploy action spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: (none)
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:15:20.859Z] Found 17 files in Deploy action spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:15:21.621Z] Done (took 1.8 sec)
+
+[2023-07-14T12:15:21.958Z] resolve Build type=jib-container name=spring-boot-image (from module spring-boot-image) is ready.
+
+[2023-07-14T12:15:23.909Z] Kubernetes: Getting API resource info for group v1
+
+[2023-07-14T12:15:26.646Z] Upserting Secret thx-sample-project-thx/registry-config
+
+[2023-07-14T12:15:28.494Z] Replaced Secret thx-sample-project-thx/registry-config
+
+[2023-07-14T12:15:28.496Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-07-14T12:15:30.328Z] Getting currently deployed resource statuses...
+
+[2023-07-14T12:15:30.329Z] Comparing expected and deployed resources...
+
+[2023-07-14T12:15:30.332Z] Resource garden-util is not a superset of deployed resource
+
+[2023-07-14T12:15:30.337Z] -> Deploying garden-util service in thx-sample-project-thx namespace (was outdated)
+
+[2023-07-14T12:15:30.337Z] Upserting Deployment thx-sample-project-thx/garden-util
+
+[2023-07-14T12:15:32.196Z] Replaced Deployment thx-sample-project-thx/garden-util
+
+[2023-07-14T12:15:32.197Z] Upserting Service thx-sample-project-thx/garden-util
+
+[2023-07-14T12:15:34.009Z] Patched Service thx-sample-project-thx/garden-util
+
+[2023-07-14T12:15:34.009Z] Waiting for resources to be ready...
+
+[2023-07-14T12:15:36.903Z] Status of Deployment garden-util is "ready"
+
+[2023-07-14T12:15:36.903Z] Status of Service garden-util is "ready"
+
+[2023-07-14T12:15:36.903Z] Resources ready
+
+[2023-07-14T12:15:36.904Z] Done!
+
+[2023-07-14T12:15:39.652Z] Execing command in thx-sample-project-thx/Pod/garden-util-6c5668d4bc-gvl5d/util: sh -c skopeo --command-timeout=30s inspect --raw --authfile /.docker/config.json docker://us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot-image:v-e5b98fbac9
+
+[2023-07-14T12:15:43.184Z] Syncing sources (3 files)...
+
+[2023-07-14T12:15:43.187Z] Syncing 3 files from spring-boot to .garden/build/spring-boot-image (and removing any extraneous files)
+
+[2023-07-14T12:15:43.193Z] Done syncing sources (took 21.3 sec)
+
+[2023-07-14T12:15:43.196Z] The JDK path hasn't been specified explicitly. JDK 8 will be used by default.
+
+[2023-07-14T12:15:43.198Z] Using JAVA_HOME=/home/workstation/.garden/tools/openjdk-8/bb0d8bd282be6d11/jdk8u292-b10
+
+[2023-07-14T12:15:43.199Z] The Maven binary hasn't been specified explicitly. Maven 3.8.8 will be used by default.
+
+[2023-07-14T12:15:43.200Z] Execing /home/workstation/.garden/tools/maven/cd3b803db0ebc2c5/apache-maven-3.8.8/bin/mvn clean package jib:build -Djib.to.image=us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot-image:v-e5b98fbac9 -Djib.container.args=GARDEN_MODULE_VERSION=v-e5b98fbac9,GARDEN_ACTION_VERSION=v-e5b98fbac9 -Dstyle.color=always -Djansi.passthrough=true -Djib.console=plain -Djib.useOnlyProjectCache=false -Djib.from.image=us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo//eclipse-temurin:8u345-b01-jre-ubuntu23 -nsu -Dtransitive=false
+
+[2023-07-14T12:15:44.120Z] [maven] [INFO] Scanning for projects...
+
+[2023-07-14T12:15:44.306Z] [maven] [INFO] 
+
+[2023-07-14T12:15:44.307Z] [maven] [INFO] ------------------< example:spring-boot-k8s-example >-------------------
+
+[2023-07-14T12:15:44.307Z] [maven] [INFO] Building spring-boot-k8s-example 0.1.0
+
+[2023-07-14T12:15:44.308Z] [maven] [INFO]   from pom.xml
+
+[2023-07-14T12:15:44.308Z] [maven] [INFO] --------------------------------[ jar ]---------------------------------
+
+[2023-07-14T12:15:44.586Z] [maven] [INFO] 
+
+[2023-07-14T12:15:44.587Z] [maven] [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:15:44.684Z] [maven] [INFO] Deleting /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/target
+
+[2023-07-14T12:15:44.700Z] [maven] [INFO] 
+
+[2023-07-14T12:15:44.701Z] [maven] [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:15:44.897Z] [maven] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+
+[2023-07-14T12:15:44.898Z] [maven] [INFO] skip non existing resourceDirectory /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/src/main/resources
+
+[2023-07-14T12:15:44.899Z] [maven] [INFO] skip non existing resourceDirectory /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/src/main/resources
+
+[2023-07-14T12:15:44.899Z] [maven] [INFO] 
+
+[2023-07-14T12:15:44.900Z] [maven] [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:15:45.046Z] [maven] [INFO] Changes detected - recompiling the module!
+
+[2023-07-14T12:15:45.052Z] [maven] [INFO] Compiling 2 source files to /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/target/classes
+
+[2023-07-14T12:15:45.533Z] [maven] [INFO] 
+
+[2023-07-14T12:15:45.533Z] [maven] [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:15:45.538Z] [maven] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+
+[2023-07-14T12:15:45.539Z] [maven] [INFO] skip non existing resourceDirectory /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/src/test/resources
+
+[2023-07-14T12:15:45.539Z] [maven] [INFO] 
+
+[2023-07-14T12:15:45.540Z] [maven] [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:15:45.543Z] [maven] [INFO] No sources to compile
+
+[2023-07-14T12:15:45.544Z] [maven] [INFO] 
+
+[2023-07-14T12:15:45.545Z] [maven] [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:15:45.658Z] [maven] [INFO] No tests to run.
+
+[2023-07-14T12:15:45.672Z] [maven] [INFO] 
+
+[2023-07-14T12:15:45.673Z] [maven] [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:15:45.851Z] [maven] [INFO] Building jar: /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/target/spring-boot-k8s-example-0.1.0.jar
+
+[2023-07-14T12:15:45.878Z] [maven] [INFO] 
+
+[2023-07-14T12:15:45.879Z] [maven] [INFO] --- jib-maven-plugin:3.1.4:build (default-cli) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:15:46.694Z] [maven] [INFO] 
+
+[2023-07-14T12:15:46.695Z] [maven] [INFO] ------------------------------------------------------------------------
+
+[2023-07-14T12:15:46.696Z] [maven] [INFO] BUILD FAILURE
+
+[2023-07-14T12:15:46.696Z] [maven] [INFO] ------------------------------------------------------------------------
+
+[2023-07-14T12:15:46.699Z] [maven] [INFO] Total time:  2.597 s
+
+[2023-07-14T12:15:46.700Z] [maven] [INFO] Finished at: 2023-07-14T12:15:46Z
+
+[2023-07-14T12:15:46.700Z] [maven] [INFO] ------------------------------------------------------------------------
+
+[2023-07-14T12:15:46.701Z] [maven] [ERROR] Failed to execute goal com.google.cloud.tools:jib-maven-plugin:3.1.4:build (default-cli) on project spring-boot-k8s-example: Invalid image reference us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo//eclipse-temurin:8u345-b01-jre-ubuntu23, perhaps you should check that the reference is formatted correctly according to https://docs.docker.com/engine/reference/commandline/tag/#extended-description
+
+[2023-07-14T12:15:46.702Z] [maven] [ERROR] For example, slash-separated name components cannot have uppercase letters: Invalid image reference: us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo//eclipse-temurin:8u345-b01-jre-ubuntu23
+
+[2023-07-14T12:15:46.702Z] [maven] [ERROR] -> [Help 1]
+
+[2023-07-14T12:15:46.705Z] [maven] [ERROR] 
+
+[2023-07-14T12:15:46.706Z] [maven] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+
+[2023-07-14T12:15:46.707Z] [maven] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+
+[2023-07-14T12:15:46.707Z] [maven] [ERROR] 
+
+[2023-07-14T12:15:46.708Z] [maven] [ERROR] For more information about the errors and possible solutions, please read the following articles:
+
+[2023-07-14T12:15:46.708Z] [maven] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+[2023-07-14T12:15:46.792Z] Build failed (took 24.9 sec)
+
+[2023-07-14T12:15:46.827Z] Done flushing all events and log entries.
+
+[2023-07-14T12:15:46.878Z] Watcher: Initializing
+
+[2023-07-14T12:15:46.879Z] Watcher: Starting FSWatcher
+
+[2023-07-14T12:15:47.853Z] 
+
+1 build action(s) failed!
+
+[2023-07-14T12:15:47.855Z] 
+See .garden/error.log for detailed error message
+
+[2023-07-14T12:16:49.311Z] Getting status...
+
+[2023-07-14T12:16:50.072Z] resolve provider templated is ready.
+
+[2023-07-14T12:16:50.077Z] resolve provider exec is ready.
+
+[2023-07-14T12:16:50.081Z] resolve provider container is ready.
+
+[2023-07-14T12:16:50.087Z] resolve provider pulumi is ready.
+
+[2023-07-14T12:16:50.091Z] resolve provider jib is ready.
+
+[2023-07-14T12:16:50.100Z] resolve provider kubernetes is ready.
+
+[2023-07-14T12:16:50.103Z] Cached (took 0.8 sec)
+
+[2023-07-14T12:16:50.103Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-07-14T12:16:50.104Z] Resolving actions and modules...
+
+[2023-07-14T12:16:50.294Z] Scanning module spring-boot-image root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./**/pom.xml,./**/src/**/*,pom.xml
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:16:50.394Z] Found 3 files in module spring-boot-image root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:16:50.492Z] Scanning module spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./*/config/*.xml,./*/config/application-gcp-dev.properties,./*/config/application-gcp.properties,./*/secrets/dev/**,./deployment/config/common.yaml,deployment/config/dev.yaml
+  → Excludes: spring-boot,**/.garden/**/*
+
+[2023-07-14T12:16:50.572Z] Found 2 files in module spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:16:50.577Z] Converting jib-container module spring-boot-image to actions
+
+[2023-07-14T12:16:50.578Z] Converting pulumi module spring-boot-service to actions
+
+[2023-07-14T12:16:50.581Z] Module spring-boot-service converted to 1 action(s)
+
+[2023-07-14T12:16:50.581Z] Module spring-boot-image converted to 1 action(s)
+
+[2023-07-14T12:16:50.610Z] Scanning Deploy action spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: (none)
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:16:51.222Z] Found 17 files in Deploy action spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:16:51.885Z] Done (took 1.8 sec)
+
+[2023-07-14T12:16:52.259Z] resolve Build type=jib-container name=spring-boot-image (from module spring-boot-image) is ready.
+
+[2023-07-14T12:16:55.443Z] Kubernetes: Getting API resource info for group v1
+
+[2023-07-14T12:16:58.145Z] Upserting Secret thx-sample-project-thx/registry-config
+
+[2023-07-14T12:16:59.955Z] Replaced Secret thx-sample-project-thx/registry-config
+
+[2023-07-14T12:16:59.958Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-07-14T12:17:01.772Z] Getting currently deployed resource statuses...
+
+[2023-07-14T12:17:01.773Z] Comparing expected and deployed resources...
+
+[2023-07-14T12:17:01.776Z] Resource garden-util is not a superset of deployed resource
+
+[2023-07-14T12:17:01.785Z] -> Deploying garden-util service in thx-sample-project-thx namespace (was outdated)
+
+[2023-07-14T12:17:01.785Z] Upserting Deployment thx-sample-project-thx/garden-util
+
+[2023-07-14T12:17:03.632Z] Replaced Deployment thx-sample-project-thx/garden-util
+
+[2023-07-14T12:17:03.632Z] Upserting Service thx-sample-project-thx/garden-util
+
+[2023-07-14T12:17:05.462Z] Patched Service thx-sample-project-thx/garden-util
+
+[2023-07-14T12:17:05.462Z] Waiting for resources to be ready...
+
+[2023-07-14T12:17:08.335Z] Status of Deployment garden-util is "ready"
+
+[2023-07-14T12:17:08.336Z] Status of Service garden-util is "ready"
+
+[2023-07-14T12:17:08.336Z] Resources ready
+
+[2023-07-14T12:17:08.336Z] Done!
+
+[2023-07-14T12:17:11.010Z] Execing command in thx-sample-project-thx/Pod/garden-util-6c5668d4bc-gvl5d/util: sh -c skopeo --command-timeout=30s inspect --raw --authfile /.docker/config.json docker://us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot-image:v-51e9748a55
+
+[2023-07-14T12:17:14.323Z] Syncing sources (3 files)...
+
+[2023-07-14T12:17:14.325Z] Syncing 3 files from spring-boot to .garden/build/spring-boot-image (and removing any extraneous files)
+
+[2023-07-14T12:17:14.332Z] Done syncing sources (took 22.1 sec)
+
+[2023-07-14T12:17:14.336Z] The JDK path hasn't been specified explicitly. JDK 8 will be used by default.
+
+[2023-07-14T12:17:14.337Z] Using JAVA_HOME=/home/workstation/.garden/tools/openjdk-8/bb0d8bd282be6d11/jdk8u292-b10
+
+[2023-07-14T12:17:14.337Z] The Maven binary hasn't been specified explicitly. Maven 3.8.8 will be used by default.
+
+[2023-07-14T12:17:14.339Z] Execing /home/workstation/.garden/tools/maven/cd3b803db0ebc2c5/apache-maven-3.8.8/bin/mvn clean package jib:build -Djib.to.image=us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot-image:v-51e9748a55 -Djib.container.args=GARDEN_MODULE_VERSION=v-51e9748a55,GARDEN_ACTION_VERSION=v-51e9748a55 -Dstyle.color=always -Djansi.passthrough=true -Djib.console=plain -Djib.useOnlyProjectCache=false -Djib.from.image=us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/eclipse-temurin:8u345-b01-jre-ubuntu23 -nsu -Dtransitive=false
+
+[2023-07-14T12:17:15.692Z] [maven] [INFO] Scanning for projects...
+
+[2023-07-14T12:17:15.909Z] [maven] [INFO] 
+
+[2023-07-14T12:17:15.910Z] [maven] [INFO] ------------------< example:spring-boot-k8s-example >-------------------
+
+[2023-07-14T12:17:15.911Z] [maven] [INFO] Building spring-boot-k8s-example 0.1.0
+
+[2023-07-14T12:17:15.911Z] [maven] [INFO]   from pom.xml
+
+[2023-07-14T12:17:15.912Z] [maven] [INFO] --------------------------------[ jar ]---------------------------------
+
+[2023-07-14T12:17:16.221Z] [maven] [INFO] 
+
+[2023-07-14T12:17:16.223Z] [maven] [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:17:16.341Z] [maven] [INFO] Deleting /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/target
+
+[2023-07-14T12:17:16.352Z] [maven] [INFO] 
+
+[2023-07-14T12:17:16.353Z] [maven] [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:17:16.532Z] [maven] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+
+[2023-07-14T12:17:16.533Z] [maven] [INFO] skip non existing resourceDirectory /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/src/main/resources
+
+[2023-07-14T12:17:16.534Z] [maven] [INFO] skip non existing resourceDirectory /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/src/main/resources
+
+[2023-07-14T12:17:16.535Z] [maven] [INFO] 
+
+[2023-07-14T12:17:16.535Z] [maven] [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:17:16.686Z] [maven] [INFO] Changes detected - recompiling the module!
+
+[2023-07-14T12:17:16.692Z] [maven] [INFO] Compiling 2 source files to /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/target/classes
+
+[2023-07-14T12:17:17.202Z] [maven] [INFO] 
+
+[2023-07-14T12:17:17.203Z] [maven] [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:17:17.207Z] [maven] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+
+[2023-07-14T12:17:17.208Z] [maven] [INFO] skip non existing resourceDirectory /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/src/test/resources
+
+[2023-07-14T12:17:17.215Z] [maven] [INFO] 
+
+[2023-07-14T12:17:17.216Z] [maven] [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:17:17.217Z] [maven] [INFO] No sources to compile
+
+[2023-07-14T12:17:17.218Z] [maven] [INFO] 
+
+[2023-07-14T12:17:17.218Z] [maven] [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:17:17.458Z] [maven] [INFO] No tests to run.
+
+[2023-07-14T12:17:17.494Z] [maven] [INFO] 
+
+[2023-07-14T12:17:17.495Z] [maven] [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:17:17.831Z] [maven] [INFO] Building jar: /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/target/spring-boot-k8s-example-0.1.0.jar
+
+[2023-07-14T12:17:17.867Z] [maven] [INFO] 
+
+[2023-07-14T12:17:17.868Z] [maven] [INFO] --- jib-maven-plugin:3.1.4:build (default-cli) @ spring-boot-k8s-example ---
+
+[2023-07-14T12:17:18.741Z] [maven] [WARNING] 'mainClass' configured in 'maven-jar-plugin' is not a valid Java class: ${start-class}
+
+[2023-07-14T12:17:18.762Z] [maven] [INFO] 
+
+[2023-07-14T12:17:18.763Z] [maven] [INFO] Containerizing application to us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot-image:v-51e9748a55...
+
+[2023-07-14T12:17:18.766Z] [maven] [WARNING] Base image 'us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/eclipse-temurin:8u345-b01-jre-ubuntu23' does not use a specific image digest - build may not be reproducible
+
+[2023-07-14T12:17:18.801Z] [maven] [INFO] Getting manifest for base image us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/eclipse-temurin:8u345-b01-jre-ubuntu23...
+
+[2023-07-14T12:17:18.831Z] [maven] [INFO] Building classes layer...
+
+[2023-07-14T12:17:18.832Z] [maven] [INFO] Building resources layer...
+
+[2023-07-14T12:17:18.833Z] [maven] [INFO] Building jvm arg files layer...
+
+[2023-07-14T12:17:18.833Z] [maven] [INFO] Building dependencies layer...
+
+[2023-07-14T12:17:20.046Z] [maven] [INFO] Using credentials from Docker config (/home/workstation/.docker/config.json) for us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot-image:v-51e9748a55
+
+[2023-07-14T12:17:21.372Z] [maven] [INFO] The base image requires auth. Trying again for us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/eclipse-temurin:8u345-b01-jre-ubuntu23...
+
+[2023-07-14T12:17:22.082Z] [maven] [INFO] Using credentials from Docker config (/home/workstation/.docker/config.json) for us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/eclipse-temurin:8u345-b01-jre-ubuntu23
+
+[2023-07-14T12:17:25.153Z] [maven] [INFO] Using base image with digest: sha256:bdf7469e7881babaaa05eb79e33f2a7d951c362f298c7415158b659c85f5edcd
+
+[2023-07-14T12:17:29.833Z] [maven] [INFO] 
+
+[2023-07-14T12:17:29.833Z] [maven] [INFO] Container entrypoint set to [java, -cp, /app/resources:/app/classes:/app/libs/*, hello.Application]
+
+[2023-07-14T12:17:29.834Z] [maven] [INFO] Container program arguments set to [GARDEN_MODULE_VERSION=v-51e9748a55, GARDEN_ACTION_VERSION=v-51e9748a55]
+
+[2023-07-14T12:17:38.981Z] [maven] [INFO] 
+
+[2023-07-14T12:17:38.982Z] [maven] [INFO] Built and pushed image as us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo/spring-boot-image:v-51e9748a55
+
+[2023-07-14T12:17:38.986Z] [maven] [INFO] 
+
+[2023-07-14T12:17:38.987Z] [maven] [INFO] ------------------------------------------------------------------------
+
+[2023-07-14T12:17:38.987Z] [maven] [INFO] BUILD SUCCESS
+
+[2023-07-14T12:17:38.988Z] [maven] [INFO] ------------------------------------------------------------------------
+
+[2023-07-14T12:17:38.989Z] [maven] [INFO] Total time:  23.322 s
+
+[2023-07-14T12:17:38.989Z] [maven] [INFO] Finished at: 2023-07-14T12:17:38Z
+
+[2023-07-14T12:17:38.989Z] [maven] [INFO] ------------------------------------------------------------------------
+
+[2023-07-14T12:17:39.009Z] Done (took 46.8 sec)
+
+[2023-07-14T12:17:39.010Z] Build type=jib-container name=spring-boot-image (from module spring-boot-image) is ready.
+
+[2023-07-14T12:17:39.065Z] Done! 
+
+[2023-07-14T12:17:39.069Z] Done flushing all events and log entries.
+
+[2023-07-14T12:17:39.120Z] Watcher: Initializing
+
+[2023-07-14T12:17:39.120Z] Watcher: Starting FSWatcher
+
+[2023-07-14T12:18:24.479Z] Getting status...
+
+[2023-07-14T12:18:25.299Z] resolve provider templated is ready.
+
+[2023-07-14T12:18:25.304Z] resolve provider exec is ready.
+
+[2023-07-14T12:18:25.309Z] resolve provider container is ready.
+
+[2023-07-14T12:18:25.317Z] resolve provider pulumi is ready.
+
+[2023-07-14T12:18:25.333Z] resolve provider jib is ready.
+
+[2023-07-14T12:18:25.344Z] resolve provider kubernetes is ready.
+
+[2023-07-14T12:18:25.348Z] Cached (took 0.9 sec)
+
+[2023-07-14T12:18:25.349Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-07-14T12:18:25.349Z] Resolving actions and modules...
+
+[2023-07-14T12:18:25.531Z] Scanning module spring-boot-image root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./**/pom.xml,./**/src/**/*,pom.xml
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:18:25.644Z] Found 3 files in module spring-boot-image root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:18:25.759Z] Scanning module spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./*/config/*.xml,./*/config/application-gcp-dev.properties,./*/config/application-gcp.properties,./*/secrets/dev/**,./deployment/config/common.yaml,deployment/config/dev.yaml
+  → Excludes: spring-boot,**/.garden/**/*
+
+[2023-07-14T12:18:25.840Z] Found 2 files in module spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:18:25.844Z] Converting jib-container module spring-boot-image to actions
+
+[2023-07-14T12:18:25.845Z] Converting pulumi module spring-boot-service to actions
+
+[2023-07-14T12:18:25.848Z] Module spring-boot-service converted to 1 action(s)
+
+[2023-07-14T12:18:25.849Z] Module spring-boot-image converted to 1 action(s)
+
+[2023-07-14T12:18:25.886Z] Scanning Deploy action spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: (none)
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:18:26.596Z] Found 17 files in Deploy action spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:18:27.534Z] Done (took 2.2 sec)
+
+[2023-07-14T12:18:27.922Z] resolve Deploy type=pulumi name=spring-boot-service (from module spring-boot-service) is ready.
+
+[2023-07-14T12:18:27.926Z] outdated
+
+[2023-07-14T12:18:27.930Z] Deploying version v-7934ab101c...
+
+[2023-07-14T12:18:27.978Z] Failed (took 0 sec)
+
+[2023-07-14T12:18:28.010Z] Done flushing all events and log entries.
+
+[2023-07-14T12:18:28.061Z] Watcher: Initializing
+
+[2023-07-14T12:18:28.061Z] Watcher: Starting FSWatcher
+
+[2023-07-14T12:18:29.001Z] 
+
+1 deploy action(s) failed!
+
+[2023-07-14T12:18:29.002Z] 
+See .garden/error.log for detailed error message
+
+[2023-07-14T12:20:20.343Z] Getting status...
+
+[2023-07-14T12:20:21.044Z] resolve provider exec is ready.
+
+[2023-07-14T12:20:21.048Z] resolve provider templated is ready.
+
+[2023-07-14T12:20:21.052Z] resolve provider container is ready.
+
+[2023-07-14T12:20:21.058Z] resolve provider pulumi is ready.
+
+[2023-07-14T12:20:21.067Z] resolve provider jib is ready.
+
+[2023-07-14T12:20:21.078Z] resolve provider kubernetes is ready.
+
+[2023-07-14T12:20:21.080Z] Cached (took 0.7 sec)
+
+[2023-07-14T12:20:21.081Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-07-14T12:20:21.081Z] Resolving actions and modules...
+
+[2023-07-14T12:20:21.222Z] Scanning module spring-boot-image root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./**/pom.xml,./**/src/**/*,pom.xml
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:20:21.310Z] Found 3 files in module spring-boot-image root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:20:21.389Z] Scanning module spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./*/config/*.xml,./*/config/application-gcp-dev.properties,./*/config/application-gcp.properties,./*/secrets/dev/**,./deployment/config/common.yaml,deployment/config/dev.yaml
+  → Excludes: spring-boot,**/.garden/**/*
+
+[2023-07-14T12:20:21.455Z] Found 2 files in module spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:20:21.460Z] Converting jib-container module spring-boot-image to actions
+
+[2023-07-14T12:20:21.460Z] Converting pulumi module spring-boot-service to actions
+
+[2023-07-14T12:20:21.465Z] Module spring-boot-service converted to 1 action(s)
+
+[2023-07-14T12:20:21.465Z] Module spring-boot-image converted to 1 action(s)
+
+[2023-07-14T12:20:21.496Z] Scanning Deploy action spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: (none)
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:20:22.010Z] Found 17 files in Deploy action spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:20:22.526Z] Done (took 1.4 sec)
+
+[2023-07-14T12:20:23.200Z] resolve Deploy type=pulumi name=spring-boot-service (from module spring-boot-service) is ready.
+
+[2023-07-14T12:20:23.203Z] outdated
+
+[2023-07-14T12:20:23.206Z] Deploying version v-7934ab101c...
+
+[2023-07-14T12:20:23.223Z] merging config for action spring-boot-service
+
+[2023-07-14T12:20:23.223Z] pulumiVariables from action: {}
+
+[2023-07-14T12:20:23.223Z] varfileContents: [
+  {
+    "thx-sharedServices-spring-boot:app-name": "spring-boot",
+    "thx-sharedServices-spring-boot:image-name": "spring-boot-image",
+    "thx-sharedServices-spring-boot:app-version": "v-51e9748a55"
+  },
+  {
+    "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+    "thx-sharedServices-spring-boot:appName": "spring-boot",
+    "thx-sharedServices-spring-boot:namespace": "thx",
+    "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo"
+  },
+  {
+    "thx-sharedServices-spring-boot:replicas": 1
+  }
+]
+
+[2023-07-14T12:20:23.223Z] merged vars: {
+  "thx-sharedServices-spring-boot:app-name": "spring-boot",
+  "thx-sharedServices-spring-boot:image-name": "spring-boot-image",
+  "thx-sharedServices-spring-boot:app-version": "v-51e9748a55",
+  "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+  "thx-sharedServices-spring-boot:appName": "spring-boot",
+  "thx-sharedServices-spring-boot:namespace": "thx",
+  "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo",
+  "thx-sharedServices-spring-boot:replicas": 1
+}
+
+[2023-07-14T12:20:23.224Z] merged config (written to /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi/Pulumi.dev.yaml): {
+  "config": {
+    "thx-sharedServices-spring-boot:app-name": "spring-boot",
+    "thx-sharedServices-spring-boot:image-name": "spring-boot-image",
+    "thx-sharedServices-spring-boot:app-version": "v-51e9748a55",
+    "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+    "thx-sharedServices-spring-boot:appName": "spring-boot",
+    "thx-sharedServices-spring-boot:namespace": "thx",
+    "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo",
+    "thx-sharedServices-spring-boot:replicas": 1
+  },
+  "backend": {
+    "url": "https://api.pulumi.com"
+  }
+}
+
+[2023-07-14T12:20:23.231Z] Spawning '/home/workstation/.garden/tools/pulumi-3-64-0/0a94b984fa69df6c/pulumi/pulumi stack select telushealth/dev --create' in /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi
+
+[2023-07-14T12:20:24.947Z] Applying pulumi stack...
+
+[2023-07-14T12:20:24.947Z] Spawning '/home/workstation/.garden/tools/pulumi-3-64-0/0a94b984fa69df6c/pulumi/pulumi up --yes --color always --config-file /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi/Pulumi.dev.yaml' in /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi
+
+[2023-07-14T12:20:26.293Z] [pulumi-3-64-0] Previewing update (telushealth/dev)
+
+[2023-07-14T12:20:27.700Z] [pulumi-3-64-0] View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/previews/cfdf9ce8-4d4a-45c3-83e9-44436ab2bd28
+
+[2023-07-14T12:20:28.608Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create 
+
+[2023-07-14T12:20:31.000Z] [pulumi-3-64-0] @ Previewing update......
+
+[2023-07-14T12:20:31.001Z] [pulumi-3-64-0]  +  thx:service:ThxrestService spring-boot create 
+
+[2023-07-14T12:20:31.001Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:20:32.587Z] [pulumi-3-64-0] @ Previewing update....
+
+[2023-07-14T12:20:32.588Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:20:32.652Z] [pulumi-3-64-0]  +  pulumi:providers:kubernetes k8s create 
+
+[2023-07-14T12:20:36.064Z] [pulumi-3-64-0] @ Previewing update.......
+
+[2023-07-14T12:20:36.064Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot create 
+
+[2023-07-14T12:20:36.088Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create 
+
+[2023-07-14T12:20:36.089Z] [pulumi-3-64-0] Resources:
+
+[2023-07-14T12:20:36.089Z] [pulumi-3-64-0]     + 4 to create
+
+[2023-07-14T12:20:36.883Z] [pulumi-3-64-0] Updating (telushealth/dev)
+
+[2023-07-14T12:20:38.372Z] [pulumi-3-64-0] View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/updates/5
+
+[2023-07-14T12:20:39.227Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (0s) 
+
+[2023-07-14T12:20:40.711Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:20:40.711Z] [pulumi-3-64-0]  +  thx:service:ThxrestService spring-boot creating (0s) 
+
+[2023-07-14T12:20:42.569Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:20:42.570Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (3s) read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:20:44.202Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:20:44.202Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (4s) read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:20:45.261Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:20:45.262Z] [pulumi-3-64-0]  +  pulumi:providers:kubernetes k8s creating (0s) 
+
+[2023-07-14T12:20:45.963Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:20:45.964Z] [pulumi-3-64-0]  +  pulumi:providers:kubernetes k8s created (0.70s) 
+
+[2023-07-14T12:20:48.647Z] [pulumi-3-64-0] @ Updating......
+
+[2023-07-14T12:20:48.647Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (0s) 
+
+[2023-07-14T12:20:50.894Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:20:50.895Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (2s) Retry #0; creation failed: deployments.apps "spring-boot" already exists
+
+[2023-07-14T12:20:50.895Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (2s) error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
+
+[2023-07-14T12:20:50.896Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot **creating failed** error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
+
+[2023-07-14T12:20:51.258Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (12s) error: update failed
+
+[2023-07-14T12:20:51.263Z] [pulumi-3-64-0]  +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev **creating failed (1s)** 1 error
+
+[2023-07-14T12:20:51.264Z] [pulumi-3-64-0] Diagnostics:
+
+[2023-07-14T12:20:51.264Z] [pulumi-3-64-0]   pulumi:pulumi:Stack (thx-sharedServices-spring-boot-dev):
+
+[2023-07-14T12:20:51.264Z] [pulumi-3-64-0]     error: update failed
+
+[2023-07-14T12:20:51.265Z] [pulumi-3-64-0]   kubernetes:apps/v1:Deployment (spring-boot):
+
+[2023-07-14T12:20:51.265Z] [pulumi-3-64-0]     error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
+
+[2023-07-14T12:20:51.265Z] [pulumi-3-64-0] Resources:
+
+[2023-07-14T12:20:51.266Z] [pulumi-3-64-0]     + 3 created
+
+[2023-07-14T12:20:51.266Z] [pulumi-3-64-0] Duration: 13s
+
+[2023-07-14T12:20:52.019Z] Failed (took 28.8 sec)
+
+[2023-07-14T12:20:52.050Z] 
+
+Error when applying pulumi stack:
+Previewing update (telushealth/dev)
+
+View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/previews/cfdf9ce8-4d4a-45c3-83e9-44436ab2bd28
+
+
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create 
+@ Previewing update......
+ +  thx:service:ThxrestService spring-boot create 
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Previewing update....
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+ +  pulumi:providers:kubernetes k8s create 
+@ Previewing update.......
+ +  kubernetes:apps/v1:Deployment spring-boot create 
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create 
+
+Resources:
+    + 4 to create
+
+Updating (telushealth/dev)
+
+View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/updates/5
+
+
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (0s) 
+@ Updating.....
+ +  thx:service:ThxrestService spring-boot creating (0s) 
+@ Updating.....
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (3s) read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Updating....
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (4s) read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Updating....
+ +  pulumi:providers:kubernetes k8s creating (0s) 
+@ Updating....
+ +  pulumi:providers:kubernetes k8s created (0.70s) 
+@ Updating......
+ +  kubernetes:apps/v1:Deployment spring-boot creating (0s) 
+@ Updating.....
+ +  kubernetes:apps/v1:Deployment spring-boot creating (2s) Retry #0; creation failed: deployments.apps "spring-boot" already exists
+ +  kubernetes:apps/v1:Deployment spring-boot creating (2s) error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
+ +  kubernetes:apps/v1:Deployment spring-boot **creating failed** error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (12s) error: update failed
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev **creating failed (1s)** 1 error
+
+Diagnostics:
+  pulumi:pulumi:Stack (thx-sharedServices-spring-boot-dev):
+    error: update failed
+
+  kubernetes:apps/v1:Deployment (spring-boot):
+    error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
+
+Resources:
+    + 3 created
+
+Duration: 13s
+
+
+
+[2023-07-14T12:20:52.070Z] Done flushing all events and log entries.
+
+[2023-07-14T12:20:52.121Z] Watcher: Initializing
+
+[2023-07-14T12:20:52.121Z] Watcher: Starting FSWatcher
+
+[2023-07-14T12:20:53.366Z] 
+
+1 deploy action(s) failed!
+
+[2023-07-14T12:20:53.369Z] 
+See .garden/error.log for detailed error message
+
+[2023-07-14T12:21:13.233Z] Getting status...
+
+[2023-07-14T12:21:14.004Z] resolve provider exec is ready.
+
+[2023-07-14T12:21:14.010Z] resolve provider templated is ready.
+
+[2023-07-14T12:21:14.014Z] resolve provider container is ready.
+
+[2023-07-14T12:21:14.021Z] resolve provider pulumi is ready.
+
+[2023-07-14T12:21:14.038Z] resolve provider jib is ready.
+
+[2023-07-14T12:21:14.048Z] resolve provider kubernetes is ready.
+
+[2023-07-14T12:21:14.051Z] Cached (took 0.8 sec)
+
+[2023-07-14T12:21:14.052Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-07-14T12:21:14.053Z] Resolving actions and modules...
+
+[2023-07-14T12:21:14.222Z] Scanning module spring-boot-image root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./**/pom.xml,./**/src/**/*,pom.xml
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:21:14.323Z] Found 3 files in module spring-boot-image root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:21:14.420Z] Scanning module spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./*/config/*.xml,./*/config/application-gcp-dev.properties,./*/config/application-gcp.properties,./*/secrets/dev/**,./deployment/config/common.yaml,deployment/config/dev.yaml
+  → Excludes: spring-boot,**/.garden/**/*
+
+[2023-07-14T12:21:14.494Z] Found 2 files in module spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:21:14.498Z] Converting jib-container module spring-boot-image to actions
+
+[2023-07-14T12:21:14.499Z] Converting pulumi module spring-boot-service to actions
+
+[2023-07-14T12:21:14.502Z] Module spring-boot-service converted to 1 action(s)
+
+[2023-07-14T12:21:14.502Z] Module spring-boot-image converted to 1 action(s)
+
+[2023-07-14T12:21:14.543Z] Scanning Deploy action spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: (none)
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:21:15.143Z] Found 17 files in Deploy action spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:21:15.939Z] Done (took 1.9 sec)
+
+[2023-07-14T12:21:16.424Z] resolve Deploy type=pulumi name=spring-boot-service (from module spring-boot-service) is ready.
+
+[2023-07-14T12:21:16.429Z] outdated
+
+[2023-07-14T12:21:16.432Z] Deploying version v-7934ab101c...
+
+[2023-07-14T12:21:16.453Z] merging config for action spring-boot-service
+
+[2023-07-14T12:21:16.453Z] pulumiVariables from action: {}
+
+[2023-07-14T12:21:16.454Z] varfileContents: [
+  {
+    "thx-sharedServices-spring-boot:app-name": "spring-boot",
+    "thx-sharedServices-spring-boot:image-name": "spring-boot-image",
+    "thx-sharedServices-spring-boot:app-version": "v-51e9748a55"
+  },
+  {
+    "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+    "thx-sharedServices-spring-boot:appName": "spring-boot",
+    "thx-sharedServices-spring-boot:namespace": "thx",
+    "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo"
+  },
+  {
+    "thx-sharedServices-spring-boot:replicas": 1
+  }
+]
+
+[2023-07-14T12:21:16.454Z] merged vars: {
+  "thx-sharedServices-spring-boot:app-name": "spring-boot",
+  "thx-sharedServices-spring-boot:image-name": "spring-boot-image",
+  "thx-sharedServices-spring-boot:app-version": "v-51e9748a55",
+  "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+  "thx-sharedServices-spring-boot:appName": "spring-boot",
+  "thx-sharedServices-spring-boot:namespace": "thx",
+  "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo",
+  "thx-sharedServices-spring-boot:replicas": 1
+}
+
+[2023-07-14T12:21:16.455Z] merged config (written to /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi/Pulumi.dev.yaml): {
+  "config": {
+    "thx-sharedServices-spring-boot:app-name": "spring-boot",
+    "thx-sharedServices-spring-boot:image-name": "spring-boot-image",
+    "thx-sharedServices-spring-boot:app-version": "v-51e9748a55",
+    "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+    "thx-sharedServices-spring-boot:appName": "spring-boot",
+    "thx-sharedServices-spring-boot:namespace": "thx",
+    "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo",
+    "thx-sharedServices-spring-boot:replicas": 1
+  },
+  "backend": {
+    "url": "https://api.pulumi.com"
+  }
+}
+
+[2023-07-14T12:21:16.465Z] Spawning '/home/workstation/.garden/tools/pulumi-3-64-0/0a94b984fa69df6c/pulumi/pulumi stack select telushealth/dev --create' in /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi
+
+[2023-07-14T12:21:18.607Z] Applying pulumi stack...
+
+[2023-07-14T12:21:18.608Z] Spawning '/home/workstation/.garden/tools/pulumi-3-64-0/0a94b984fa69df6c/pulumi/pulumi up --yes --color always --config-file /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi/Pulumi.dev.yaml' in /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi
+
+[2023-07-14T12:21:20.373Z] [pulumi-3-64-0] Previewing update (telushealth/dev)
+
+[2023-07-14T12:21:21.794Z] [pulumi-3-64-0] View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/previews/51c8042d-15b8-461f-9f7f-05eeb92fc1e9
+
+[2023-07-14T12:21:23.106Z] [pulumi-3-64-0] @ Previewing update....
+
+[2023-07-14T12:21:23.106Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running 
+
+[2023-07-14T12:21:23.404Z] [pulumi-3-64-0]     thx:service:ThxrestService spring-boot  
+
+[2023-07-14T12:21:23.405Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:21:24.674Z] [pulumi-3-64-0] @ Previewing update....
+
+[2023-07-14T12:21:24.674Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:21:24.735Z] [pulumi-3-64-0]     pulumi:providers:kubernetes k8s  
+
+[2023-07-14T12:21:24.932Z] [pulumi-3-64-0] @ Previewing update....
+
+[2023-07-14T12:21:24.932Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot create 
+
+[2023-07-14T12:21:24.950Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev  
+
+[2023-07-14T12:21:24.951Z] [pulumi-3-64-0] Resources:
+
+[2023-07-14T12:21:24.951Z] [pulumi-3-64-0]     + 1 to create
+
+[2023-07-14T12:21:24.951Z] [pulumi-3-64-0]     3 unchanged
+
+[2023-07-14T12:21:25.800Z] [pulumi-3-64-0] Updating (telushealth/dev)
+
+[2023-07-14T12:21:27.254Z] [pulumi-3-64-0] View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/updates/6
+
+[2023-07-14T12:21:28.552Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:21:28.553Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running 
+
+[2023-07-14T12:21:30.896Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:21:30.897Z] [pulumi-3-64-0]     thx:service:ThxrestService spring-boot  
+
+[2023-07-14T12:21:30.897Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:21:32.448Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:21:32.448Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:21:33.525Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:21:33.526Z] [pulumi-3-64-0]     pulumi:providers:kubernetes k8s  
+
+[2023-07-14T12:21:33.537Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (0s) 
+
+[2023-07-14T12:21:36.552Z] [pulumi-3-64-0] @ Updating......
+
+[2023-07-14T12:21:36.553Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (3s) 
+
+[2023-07-14T12:21:36.554Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (3s) [1/2] Waiting for app ReplicaSet be marked available
+
+[2023-07-14T12:21:38.127Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:21:38.127Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (4s) warning: [MinimumReplicasUnavailable] Deployment does not have minimum availability.
+
+[2023-07-14T12:21:38.440Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:21:38.440Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (4s) [1/2] Waiting for app ReplicaSet be marked available (0/1 Pods available)
+
+[2023-07-14T12:21:46.562Z] [pulumi-3-64-0] @ Updating...........
+
+[2023-07-14T12:21:46.563Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (13s) warning: [Pod thx/spring-boot-7fd64dc658-qbfbc]: containers with incomplete status: [install-oneagent]
+
+[2023-07-14T12:22:26.554Z] [pulumi-3-64-0] @ Updating...........................................
+
+[2023-07-14T12:22:26.555Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (53s) warning: [Pod thx/spring-boot-7fd64dc658-qbfbc]: containers with unready status: [spring-boot] -- [PodInitializing] 
+
+[2023-07-14T12:22:28.920Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:22:28.920Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot creating (55s) Deployment initialization complete
+
+[2023-07-14T12:22:29.253Z] [pulumi-3-64-0]  +  kubernetes:apps/v1:Deployment spring-boot created (55s) Deployment initialization complete
+
+[2023-07-14T12:22:29.988Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:22:29.988Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev  
+
+[2023-07-14T12:22:29.989Z] [pulumi-3-64-0] Resources:
+
+[2023-07-14T12:22:29.990Z] [pulumi-3-64-0]     + 1 created
+
+[2023-07-14T12:22:29.990Z] [pulumi-3-64-0]     3 unchanged
+
+[2023-07-14T12:22:29.990Z] [pulumi-3-64-0] Duration: 1m3s
+
+[2023-07-14T12:22:33.807Z] stack outputs for spring-boot-service: {}
+
+[2023-07-14T12:22:33.809Z] Done (took 77.4 sec)
+
+[2023-07-14T12:22:33.809Z] Deploy type=pulumi name=spring-boot-service (from module spring-boot-service) is ready.
+
+[2023-07-14T12:22:33.863Z] Done! 
+
+[2023-07-14T12:22:33.865Z] Done flushing all events and log entries.
+
+[2023-07-14T12:22:33.917Z] Watcher: Initializing
+
+[2023-07-14T12:22:33.918Z] Watcher: Starting FSWatcher
+
+[2023-07-14T12:22:46.425Z] Getting status...
+
+[2023-07-14T12:22:47.198Z] resolve provider templated is ready.
+
+[2023-07-14T12:22:47.202Z] resolve provider exec is ready.
+
+[2023-07-14T12:22:47.206Z] resolve provider container is ready.
+
+[2023-07-14T12:22:47.213Z] resolve provider pulumi is ready.
+
+[2023-07-14T12:22:47.219Z] resolve provider jib is ready.
+
+[2023-07-14T12:22:47.236Z] resolve provider kubernetes is ready.
+
+[2023-07-14T12:22:47.241Z] Cached (took 0.8 sec)
+
+[2023-07-14T12:22:47.241Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-07-14T12:22:47.242Z] Resolving actions and modules...
+
+[2023-07-14T12:22:47.436Z] Scanning module spring-boot-image root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./**/pom.xml,./**/src/**/*,pom.xml
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:22:47.540Z] Found 3 files in module spring-boot-image root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:22:47.637Z] Scanning module spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: ./*/config/*.xml,./*/config/application-gcp-dev.properties,./*/config/application-gcp.properties,./*/secrets/dev/**,./deployment/config/common.yaml,deployment/config/dev.yaml
+  → Excludes: spring-boot,**/.garden/**/*
+
+[2023-07-14T12:22:47.717Z] Found 2 files in module spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:22:47.722Z] Converting jib-container module spring-boot-image to actions
+
+[2023-07-14T12:22:47.723Z] Converting pulumi module spring-boot-service to actions
+
+[2023-07-14T12:22:47.726Z] Module spring-boot-service converted to 1 action(s)
+
+[2023-07-14T12:22:47.727Z] Module spring-boot-image converted to 1 action(s)
+
+[2023-07-14T12:22:47.755Z] Scanning Deploy action spring-boot-service root at /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+  → Includes: (none)
+  → Excludes: **/.garden/**/*
+
+[2023-07-14T12:22:48.767Z] Found 17 files in Deploy action spring-boot-service root /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot
+
+[2023-07-14T12:22:49.573Z] Done (took 2.3 sec)
+
+[2023-07-14T12:22:49.833Z] resolve Deploy type=pulumi name=spring-boot-service (from module spring-boot-service) is ready.
+
+[2023-07-14T12:22:49.837Z] outdated
+
+[2023-07-14T12:22:49.841Z] Deploying version v-7934ab101c...
+
+[2023-07-14T12:22:49.862Z] merging config for action spring-boot-service
+
+[2023-07-14T12:22:49.862Z] pulumiVariables from action: {}
+
+[2023-07-14T12:22:49.862Z] varfileContents: [
+  {
+    "thx-sharedServices-spring-boot:app-name": "spring-boot",
+    "thx-sharedServices-spring-boot:image-name": "spring-boot-image",
+    "thx-sharedServices-spring-boot:app-version": "v-51e9748a55"
+  },
+  {
+    "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+    "thx-sharedServices-spring-boot:appName": "spring-boot",
+    "thx-sharedServices-spring-boot:namespace": "thx",
+    "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo"
+  },
+  {
+    "thx-sharedServices-spring-boot:replicas": 1
+  }
+]
+
+[2023-07-14T12:22:49.863Z] merged vars: {
+  "thx-sharedServices-spring-boot:app-name": "spring-boot",
+  "thx-sharedServices-spring-boot:image-name": "spring-boot-image",
+  "thx-sharedServices-spring-boot:app-version": "v-51e9748a55",
+  "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+  "thx-sharedServices-spring-boot:appName": "spring-boot",
+  "thx-sharedServices-spring-boot:namespace": "thx",
+  "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo",
+  "thx-sharedServices-spring-boot:replicas": 1
+}
+
+[2023-07-14T12:22:49.863Z] merged config (written to /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi/Pulumi.dev.yaml): {
+  "config": {
+    "thx-sharedServices-spring-boot:app-name": "spring-boot",
+    "thx-sharedServices-spring-boot:image-name": "spring-boot-image",
+    "thx-sharedServices-spring-boot:app-version": "v-51e9748a55",
+    "thx-sharedServices-spring-boot:springProfiles": "gcp,gcp-dev",
+    "thx-sharedServices-spring-boot:appName": "spring-boot",
+    "thx-sharedServices-spring-boot:namespace": "thx",
+    "thx-sharedServices-spring-boot:dockerRepoUrl": "us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo",
+    "thx-sharedServices-spring-boot:replicas": 1
+  },
+  "backend": {
+    "url": "https://api.pulumi.com"
+  }
+}
+
+[2023-07-14T12:22:49.875Z] Spawning '/home/workstation/.garden/tools/pulumi-3-64-0/0a94b984fa69df6c/pulumi/pulumi stack select telushealth/dev --create' in /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi
+
+[2023-07-14T12:22:51.305Z] Applying pulumi stack...
+
+[2023-07-14T12:22:51.306Z] Spawning '/home/workstation/.garden/tools/pulumi-3-64-0/0a94b984fa69df6c/pulumi/pulumi up --yes --color always --config-file /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi/Pulumi.dev.yaml' in /home/workstation/thx/workspace/garden-sample-project/garden-sample-project/spring-boot/deployment/pulumi
+
+[2023-07-14T12:22:52.714Z] [pulumi-3-64-0] Previewing update (telushealth/dev)
+
+[2023-07-14T12:22:54.744Z] [pulumi-3-64-0] View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/previews/75639559-858d-42e8-9e7c-687d427b774f
+
+[2023-07-14T12:22:56.071Z] [pulumi-3-64-0] @ Previewing update....
+
+[2023-07-14T12:22:56.072Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running 
+
+[2023-07-14T12:22:56.373Z] [pulumi-3-64-0]     thx:service:ThxrestService spring-boot  
+
+[2023-07-14T12:22:56.374Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:22:57.675Z] [pulumi-3-64-0] @ Previewing update....
+
+[2023-07-14T12:22:57.675Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:22:57.745Z] [pulumi-3-64-0] @ Previewing update....
+
+[2023-07-14T12:22:57.747Z] [pulumi-3-64-0]     pulumi:providers:kubernetes k8s  
+
+[2023-07-14T12:22:58.083Z] [pulumi-3-64-0]     kubernetes:apps/v1:Deployment spring-boot  
+
+[2023-07-14T12:22:58.108Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev  
+
+[2023-07-14T12:22:58.108Z] [pulumi-3-64-0] Resources:
+
+[2023-07-14T12:22:58.109Z] [pulumi-3-64-0]     4 unchanged
+
+[2023-07-14T12:22:58.897Z] [pulumi-3-64-0] Updating (telushealth/dev)
+
+[2023-07-14T12:23:00.386Z] [pulumi-3-64-0] View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/updates/7
+
+[2023-07-14T12:23:01.531Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:23:01.531Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running 
+
+[2023-07-14T12:23:04.067Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:23:04.068Z] [pulumi-3-64-0]     thx:service:ThxrestService spring-boot  
+
+[2023-07-14T12:23:04.068Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:23:05.602Z] [pulumi-3-64-0] @ Updating.....
+
+[2023-07-14T12:23:05.602Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+
+[2023-07-14T12:23:06.781Z] [pulumi-3-64-0] @ Updating....
+
+[2023-07-14T12:23:06.782Z] [pulumi-3-64-0]     pulumi:providers:kubernetes k8s  
+
+[2023-07-14T12:23:06.795Z] [pulumi-3-64-0]     kubernetes:apps/v1:Deployment spring-boot  
+
+[2023-07-14T12:23:06.821Z] [pulumi-3-64-0]     pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev  
+
+[2023-07-14T12:23:06.821Z] [pulumi-3-64-0] Resources:
+
+[2023-07-14T12:23:06.822Z] [pulumi-3-64-0]     4 unchanged
+
+[2023-07-14T12:23:06.823Z] [pulumi-3-64-0] Duration: 7s
+
+[2023-07-14T12:23:11.242Z] stack outputs for spring-boot-service: {}
+
+[2023-07-14T12:23:11.244Z] Done (took 21.4 sec)
+
+[2023-07-14T12:23:11.244Z] Deploy type=pulumi name=spring-boot-service (from module spring-boot-service) is ready.
+
+[2023-07-14T12:23:11.300Z] Done! 
+
+[2023-07-14T12:23:11.303Z] Done flushing all events and log entries.
+
+[2023-07-14T12:23:11.354Z] Watcher: Initializing
+
+[2023-07-14T12:23:11.354Z] Watcher: Starting FSWatcher

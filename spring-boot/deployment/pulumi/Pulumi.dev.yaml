@@ -1,4 +1,7 @@
 config:
+  thx-sharedServices-spring-boot:app-name: spring-boot
+  thx-sharedServices-spring-boot:image-name: spring-boot-image
+  thx-sharedServices-spring-boot:app-version: v-51e9748a55
   thx-sharedServices-spring-boot:springProfiles: gcp,gcp-dev
   thx-sharedServices-spring-boot:appName: spring-boot
   thx-sharedServices-spring-boot:namespace: thx

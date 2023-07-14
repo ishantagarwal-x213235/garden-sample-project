@@ -1,2 +1,2 @@
-import {ThxService} from "../../../deploymentconfig/index/";
-new ThxService("");
+import {ThxService} from "./thxService";
+new ThxService();

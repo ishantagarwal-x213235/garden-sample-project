@@ -1,0 +1,97 @@
+
+[2023-07-14T12:00:19.244Z] Failed (took 0 sec)
+
+[2023-07-14T12:00:20.276Z] 
+
+1 deploy action(s) failed!
+
+[2023-07-14T12:08:31.755Z] Failed (took 0 sec)
+
+[2023-07-14T12:08:32.765Z] 
+
+1 deploy action(s) failed!
+
+[2023-07-14T12:09:18.223Z] Failed (took 0 sec)
+
+[2023-07-14T12:09:19.242Z] 
+
+1 deploy action(s) failed!
+
+[2023-07-14T12:15:46.792Z] Build failed (took 24.9 sec)
+
+[2023-07-14T12:15:47.853Z] 
+
+1 build action(s) failed!
+
+[2023-07-14T12:18:27.978Z] Failed (took 0 sec)
+
+[2023-07-14T12:18:29.001Z] 
+
+1 deploy action(s) failed!
+
+[2023-07-14T12:20:52.019Z] Failed (took 28.8 sec)
+
+[2023-07-14T12:20:52.049Z] 
+
+Error when applying pulumi stack:
+Previewing update (telushealth/dev)
+
+View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/previews/cfdf9ce8-4d4a-45c3-83e9-44436ab2bd28
+
+
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create 
+@ Previewing update......
+ +  thx:service:ThxrestService spring-boot create 
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Previewing update....
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+ +  pulumi:providers:kubernetes k8s create 
+@ Previewing update.......
+ +  kubernetes:apps/v1:Deployment spring-boot create 
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create 
+
+Resources:
+    + 4 to create
+
+Updating (telushealth/dev)
+
+View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/updates/5
+
+
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (0s) 
+@ Updating.....
+ +  thx:service:ThxrestService spring-boot creating (0s) 
+@ Updating.....
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (3s) read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Updating....
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (4s) read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Updating....
+ +  pulumi:providers:kubernetes k8s creating (0s) 
+@ Updating....
+ +  pulumi:providers:kubernetes k8s created (0.70s) 
+@ Updating......
+ +  kubernetes:apps/v1:Deployment spring-boot creating (0s) 
+@ Updating.....
+ +  kubernetes:apps/v1:Deployment spring-boot creating (2s) Retry #0; creation failed: deployments.apps "spring-boot" already exists
+ +  kubernetes:apps/v1:Deployment spring-boot creating (2s) error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
+ +  kubernetes:apps/v1:Deployment spring-boot **creating failed** error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (12s) error: update failed
+ +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev **creating failed (1s)** 1 error
+
+Diagnostics:
+  pulumi:pulumi:Stack (thx-sharedServices-spring-boot-dev):
+    error: update failed
+
+  kubernetes:apps/v1:Deployment (spring-boot):
+    error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
+
+Resources:
+    + 3 created
+
+Duration: 13s
+
+
+
+[2023-07-14T12:20:53.366Z] 
+
+1 deploy action(s) failed!

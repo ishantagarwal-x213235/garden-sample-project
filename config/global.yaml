@@ -1,9 +1,15 @@
-${var.pulumiProjectName}:app-name: ${parent.name}
 
-# Optional param. Use it for testing. The deployment will add the '-suffix' to app-name param. 
-# So, it will deploy, for example,activemq-test service and it will not collide with 'official' activemq deployment 
-${var.pulumiProjectName}:app-name-suffix:
+################ ERROR ############
+### Below placeholder are not working as reported Could not find key parent. 
+### Available keys: actions, command, datetime, environment, git, inputs, local, modules, project, providers, runtime, secrets, this, var and variables
 
-# for most services the same as app-name. For 'two-face' services, like CRM anf TPR, docker image name which will be different from app-name.
-# For example, app-name is 'tpr-cache-updater-prescribeit' and image-name 'tpr-cache-updater'
-${var.pulumiProjectName}:image-name: ${parent.name}
+###${var.pulumiProjectName}:app-name: ${ parent.name }
+###${var.pulumiProjectName}:app-name-suffix:
+###${var.pulumiProjectName}:image-name: ${parent.name}
+
+##################
+
+${var.pulumiProjectName}:app-name: spring-boot
+
+${var.pulumiProjectName}:image-name: spring-boot-image
+${var.pulumiProjectName}:app-version: ${modules["spring-boot-image"].version}

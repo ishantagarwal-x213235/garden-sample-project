@@ -4,7 +4,7 @@ inputsSchemaPath: schema.json
 
 modules:
   - type: jib-container
-    name: ${parent.name}-publish-image
+    name: ${parent.name}-image
     description: Backend service
 
     include: 
@@ -41,7 +41,7 @@ modules:
     deployFromPreview: ${var.withPlan}
 
     pulumiVarfiles: 
-       - "${local.projectPath}/pulumi/config/global.yaml"
+       - "${local.projectPath}/config/global.yaml"
        - "${inputs.deploymentFolder}/config/common.yaml"
        - "${inputs.deploymentFolder}/config/${environment.name}.yaml"
 
@@ -57,5 +57,5 @@ modules:
 
       
     build:
-      dependencies: ["${'${parent.name}-publish-image'}"]
+      dependencies: ["${'${parent.name}-image'}"]
 
