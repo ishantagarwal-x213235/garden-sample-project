@@ -1,2 +1,3 @@
 spring-boot/deployment/pulumi/node_modules/
 spring-boot/target/
+**/node_modules/
