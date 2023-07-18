@@ -1,4 +1,4 @@
-kind: ModuleTemplate
+kind: ConfigTemplate
 name: spring-service-module-template
 inputsSchemaPath: schema.json
 
@@ -30,7 +30,7 @@ modules:
     description: common to all REST services
     root: ${inputs.deploymentFolder}/pulumi
     stack: "${environment.name}"
-
+    disabled: ${inputs.disabled}
     variables:
       excludeDefault: ["${parent.name}"]
       pulumiProjectName: ${var.gardenProjectName}-${var.projectname}-${parent.name}

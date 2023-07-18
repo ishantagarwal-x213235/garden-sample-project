@@ -1,7 +1,6 @@
-kind: Module
-type: templated
+kind: RenderTemplate
 template: spring-service-module-template
 name: spring-boot
-#disabled: ${environment.name != 'dev'} #Uncomment it will not work and report the error (missing environment key)
 inputs:
   jdkVersion: "8" #by defualt available in schema.json but ModuleTemplate failed to find it.
+  disabled: ${environment.name != 'dev'}
