@@ -1,4 +1,4 @@
-Run the `npm install` command inside `spring-boot/deployment/pulumi` folder.
+Run the `npm install` command inside `apps/spring-boot/deployment/pulumi` folder.
 
 `garden deploy spring-boot-service` will deploy the services to k8s.
 
