@@ -1,0 +1,4 @@
+name: thx-sharedServices-spring-boot
+runtime: nodejs
+description: A minimal Kubernetes TypeScript Pulumi program
+main: "default-index.ts"

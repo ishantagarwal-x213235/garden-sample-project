@@ -1,0 +1,11 @@
+config:
+  thx-sharedServices-spring-boot:app-name: spring-boot
+  thx-sharedServices-spring-boot:image-name: spring-boot-image
+  thx-sharedServices-spring-boot:app-version: v-276eff3ba0
+  thx-sharedServices-spring-boot:springProfiles: gcp,gcp-dev
+  thx-sharedServices-spring-boot:appName: spring-boot
+  thx-sharedServices-spring-boot:namespace: thx
+  thx-sharedServices-spring-boot:dockerRepoUrl: us-docker.pkg.dev/th-thx-common-46f5/thx-prod-docker-repo
+  thx-sharedServices-spring-boot:replicas: 1
+backend:
+  url: https://api.pulumi.com

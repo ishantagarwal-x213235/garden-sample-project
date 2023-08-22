@@ -1,6 +1,6 @@
 kind: RenderTemplate
 template: spring-service-module-template
-name: spring-boot
+name: spring-boot-1
 inputs:
   jdkVersion: "8" #by defualt available in schema.json but ModuleTemplate failed to find it.
   disabled: ${environment.name != 'dev'}

@@ -6,7 +6,7 @@ modules:
   - type: jib-container
     name: ${parent.name}-image
     description: Backend service
-
+    disabled: ${inputs.disabled}
     include: 
       - ./**/src/**/*
       - pom.xml

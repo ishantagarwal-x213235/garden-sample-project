@@ -53,6 +53,10 @@
       "jdkVersion": {
         "type": "string",
         "default": "8"
+      },
+      "disabled":{
+        "type": "boolean",
+        "default": false
       }
     }
 }
