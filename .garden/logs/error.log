@@ -1,97 +1,195 @@
 
-[2023-07-14T12:00:19.244Z] Failed (took 0 sec)
+[2023-07-25T12:56:15.018Z] Error (took 8.9 sec)
 
-[2023-07-14T12:00:20.276Z] 
+[2023-07-25T12:56:17.321Z] 
 
-1 deploy action(s) failed!
+Failed resolving one or more providers:
+- kubernetes
 
-[2023-07-14T12:08:31.755Z] Failed (took 0 sec)
+[2023-07-25T12:59:43.694Z] 
 
-[2023-07-14T12:08:32.765Z] 
+Could not find one or more Deploy actions: spring-boot4-service
 
-1 deploy action(s) failed!
+[2023-07-26T07:51:16.134Z] 
 
-[2023-07-14T12:09:18.223Z] Failed (took 0 sec)
+Could not find one or more Deploy actions: spring-boot-service
 
-[2023-07-14T12:09:19.242Z] 
+[2023-07-26T07:59:34.437Z] Failed (took 33.7 sec)
 
-1 deploy action(s) failed!
-
-[2023-07-14T12:15:46.792Z] Build failed (took 24.9 sec)
-
-[2023-07-14T12:15:47.853Z] 
-
-1 build action(s) failed!
-
-[2023-07-14T12:18:27.978Z] Failed (took 0 sec)
-
-[2023-07-14T12:18:29.001Z] 
-
-1 deploy action(s) failed!
-
-[2023-07-14T12:20:52.019Z] Failed (took 28.8 sec)
-
-[2023-07-14T12:20:52.049Z] 
+[2023-07-26T07:59:34.509Z] 
 
 Error when applying pulumi stack:
 Previewing update (telushealth/dev)
 
-View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/previews/cfdf9ce8-4d4a-45c3-83e9-44436ab2bd28
+View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/previews/6cd070ab-1b33-484d-92c6-b71f00538520
 
-
- +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create 
-@ Previewing update......
- +  thx:service:ThxrestService spring-boot create 
- +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create read pulumi:pulumi:StackReference telushealth/thx-gke/dev
 @ Previewing update....
- +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create read pulumi:pulumi:StackReference telushealth/thx-gke/dev
- +  pulumi:providers:kubernetes k8s create 
-@ Previewing update.......
- +  kubernetes:apps/v1:Deployment spring-boot create 
- +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev create 
+
+@ Previewing update.....
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running 
+@ Previewing update.........
+    thx:service:ThxrestService spring-boot  
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Previewing update....
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Previewing update....
+    pulumi:providers:kubernetes k8s  
+ ~  kubernetes:apps/v1:Deployment spring-boot update [diff: ~spec]
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev  
 
 Resources:
-    + 4 to create
+    ~ 1 to update
+    3 unchanged
 
 Updating (telushealth/dev)
 
-View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/updates/5
+View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/updates/9
 
 
- +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (0s) 
 @ Updating.....
- +  thx:service:ThxrestService spring-boot creating (0s) 
-@ Updating.....
- +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (3s) read pulumi:pulumi:StackReference telushealth/thx-gke/dev
-@ Updating....
- +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (4s) read pulumi:pulumi:StackReference telushealth/thx-gke/dev
-@ Updating....
- +  pulumi:providers:kubernetes k8s creating (0s) 
-@ Updating....
- +  pulumi:providers:kubernetes k8s created (0.70s) 
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running 
 @ Updating......
- +  kubernetes:apps/v1:Deployment spring-boot creating (0s) 
+    thx:service:ThxrestService spring-boot  
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Updating....
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
 @ Updating.....
- +  kubernetes:apps/v1:Deployment spring-boot creating (2s) Retry #0; creation failed: deployments.apps "spring-boot" already exists
- +  kubernetes:apps/v1:Deployment spring-boot creating (2s) error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
- +  kubernetes:apps/v1:Deployment spring-boot **creating failed** error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
- +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev creating (12s) error: update failed
- +  pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev **creating failed (1s)** 1 error
+    pulumi:providers:kubernetes k8s  
+ ~  kubernetes:apps/v1:Deployment spring-boot updating (0s) [diff: ~spec]
+@ Updating......
+ ~  kubernetes:apps/v1:Deployment spring-boot updating (3s) [diff: ~spec]; error: update of resource thx/spring-boot failed because the Kubernetes API server reported that it failed to fully initialize or become live: deployments.apps "spring-boot" not found
+ ~  kubernetes:apps/v1:Deployment spring-boot **updating failed** [diff: ~spec]; error: update of resource thx/spring-boot failed because the Kubernetes API server reported that it failed to fully initialize or become live: deployments.apps "spring-boot" not found
+@ Updating....
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running error: update failed
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev **failed** 1 error
 
 Diagnostics:
   pulumi:pulumi:Stack (thx-sharedServices-spring-boot-dev):
     error: update failed
 
   kubernetes:apps/v1:Deployment (spring-boot):
-    error: resource thx/spring-boot was not successfully created by the Kubernetes API server : deployments.apps "spring-boot" already exists
+    error: update of resource thx/spring-boot failed because the Kubernetes API server reported that it failed to fully initialize or become live: deployments.apps "spring-boot" not found
 
 Resources:
-    + 3 created
+    3 unchanged
 
-Duration: 13s
+Duration: 12s
 
 
 
-[2023-07-14T12:20:53.366Z] 
+[2023-07-26T07:59:36.051Z] 
 
 1 deploy action(s) failed!
+
+[2023-07-26T08:05:38.231Z] Failed (took 25.6 sec)
+
+[2023-07-26T08:05:38.307Z] 
+
+Error when applying pulumi stack:
+Previewing update (telushealth/dev)
+
+View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/previews/02cd7d23-72f4-46a3-a622-b96f30190c16
+
+
+@ Previewing update.....
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running 
+@ Previewing update....
+    thx:service:ThxrestService spring-boot  
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Previewing update....
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Previewing update....
+    pulumi:providers:kubernetes k8s  
+ ~  kubernetes:apps/v1:Deployment spring-boot update [diff: ~spec]
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev  
+
+Resources:
+    ~ 1 to update
+    3 unchanged
+
+Updating (telushealth/dev)
+
+View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/updates/10
+
+
+@ Updating.....
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running 
+@ Updating......
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+    thx:service:ThxrestService spring-boot  
+@ Updating....
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running read pulumi:pulumi:StackReference telushealth/thx-gke/dev
+@ Updating....
+    pulumi:providers:kubernetes k8s  
+ ~  kubernetes:apps/v1:Deployment spring-boot updating (0s) [diff: ~spec]
+@ Updating.......
+ ~  kubernetes:apps/v1:Deployment spring-boot updating (3s) [diff: ~spec]; error: update of resource thx/spring-boot failed because the Kubernetes API server reported that it failed to fully initialize or become live: deployments.apps "spring-boot" not found
+ ~  kubernetes:apps/v1:Deployment spring-boot **updating failed** [diff: ~spec]; error: update of resource thx/spring-boot failed because the Kubernetes API server reported that it failed to fully initialize or become live: deployments.apps "spring-boot" not found
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev running error: update failed
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev **failed** 1 error
+
+Diagnostics:
+  kubernetes:apps/v1:Deployment (spring-boot):
+    error: update of resource thx/spring-boot failed because the Kubernetes API server reported that it failed to fully initialize or become live: deployments.apps "spring-boot" not found
+
+  pulumi:pulumi:Stack (thx-sharedServices-spring-boot-dev):
+    error: update failed
+
+Resources:
+    3 unchanged
+
+Duration: 12s
+
+
+
+[2023-07-26T08:05:39.730Z] 
+
+1 deploy action(s) failed!
+
+[2023-07-26T10:16:55.542Z] 
+
+Could not find one or more Deploy actions: spring-boot-service
+
+[2023-07-31T13:45:54.780Z] 
+
+Could not find one or more Deploy actions: spring-boot-9
+
+[2023-07-31T13:51:56.462Z] Failed (took 7.8 sec)
+
+[2023-07-31T13:51:56.519Z] 
+
+Error when applying pulumi stack:
+Previewing update (telushealth/dev)
+
+View Live: https://app.pulumi.com/telushealth/thx-sharedServices-spring-boot/dev/previews/50c4a7f7-68f1-4db7-8354-57389d842c50
+
+@ Previewing update....
+
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev  error: It looks like the Pulumi SDK has not been installed. Have you run npm install or yarn install?
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev  error: error reading from server: EOF
+    pulumi:pulumi:Stack thx-sharedServices-spring-boot-dev  1 error; 1 message
+
+Diagnostics:
+  pulumi:pulumi:Stack (thx-sharedServices-spring-boot-dev):
+    error: It looks like the Pulumi SDK has not been installed. Have you run npm install or yarn install?
+
+    error: error reading from server: EOF
+
+
+
+
+[2023-07-31T13:51:58.176Z] 
+
+1 deploy action(s) failed!
+
+[2023-08-22T06:42:06.268Z] 
+
+Failed resolving one or more modules:
+
+spring-boot-1-image: Error validating inputs for module spring-boot-1-image (apps/spring-boot-1/spring-boot.garden.yml): value at ./disabled must be boolean
+
+[2023-08-22T06:45:33.540Z] 
+
+Failed resolving one or more modules:
+
+spring-boot-image: Error validating inputs for module spring-boot-image (apps/spring-boot/spring-boot.garden.yml): value at ./disabled must be boolean
