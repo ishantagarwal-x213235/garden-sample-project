@@ -1,6 +1,0 @@
-
-[2023-08-22T06:45:33.537Z] 
-
-Failed resolving one or more modules:
-
-spring-boot-image: Error validating inputs for module spring-boot-image (apps/spring-boot/spring-boot.garden.yml): value at ./disabled must be boolean
